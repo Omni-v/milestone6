@@ -1,63 +1,58 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="CSS/homepage.css">
 <html lang="en">
-
 
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <meta name="viewport" content="width=1280">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/bf08fd407d.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
- <style> 
-/*make the page scrollable*/
-
-html, body{
-    background: rgb(20,22,69);
-            background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: auto;
-
-   
-}
-
-</style>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
+    <style>
+        /* ... your existing styles ... */
+    </style>
 </head>
-<div class=" body">
-<body>
 
-<header>
-  <h1></h1>
-<div class="nav">
-    <button class="button"><a style="color: #21bb7d;"> Special events / current events</a></div></button>
-    <button class="button"><a style="color: #21bb7d;"> Timeline of classes until graduation</a></div></button>
-    <button class="button"><a style ="text-decoration: none; color: #21bb7d;" href="contactMe.html"> Contact me </a></div></button>
-    <button class="button"><a style=" text-decoration: none; color: #21bb7d;" href="aboutMe.html">about me </a></div></button>
-    <button class="button"><a style=" text-decoration: none; color: #21bb7d;">things to share </a> </div></button>
-    <button class="button"><a style=" text-decoration: none; color: #21bb7d;" href="photoDump.html">Photo dump</a> </div></button>
+<body style="background: rgb(20,22,69);
+background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+color: #ffffff;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="right: 10%"> <!-- Added bg-dark for a dark background -->
+        <div class="container"> <!-- Added a container for better alignment -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Used ml-auto to push the links to the right side -->
+                    <li class="nav-item"><a class="nav-link" href="specialEvents.html">Cybersecurity news articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photoDump.html">Photo Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactMe.html">Contact me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutMe.html">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Timeline.html">Timeline to graduation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <a href="https://twitter.com/omnivoreowen"><i class="fa-brands fa-twitter fa-xl" style="color: #00d5ff;"></i></a>
+    <a href="https://www.youtube.com/channel/UC4H2ATljr-9yAqA39LP95dg"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
+    <a href="https://github.com/Omni-vore"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
+    <a href="https://www.instagram.com/omnivoreowen/"><i class="fa-brands fa-instagram fa-xl" style="color: #ff00ff;"></i></a> </div>
+    <!-- ... rest of your content ... -->
 
+  
 
-
-</header>
-</div>
+</body>
+</html>
 
 <div class="main">
     <div class="main-text">
@@ -69,11 +64,12 @@ html, body{
     </div>
     </div>
 
-<footer>
-    <p style="text-align: center; color: white"> Cst-120: Web design 1 </p>
-    <p style="text-align: center; color:white">Grand Canyon University </p>
+<footer style="position: absolute; bottom: 5%; left:15%">
+    <p style="text-align: center; color: white "> Cst-120: Web design 1 </p>
+    <p style="text-align: center; color:white;">Grand Canyon University </p>
     <p  style="text-align: center; color: white"> &copy; 2023 Owen Lindsey </p>
 </footer>
+  <script src="JS/main.js"></script>
 </body>
 </div>
 </div>

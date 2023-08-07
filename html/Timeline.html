@@ -1,71 +1,190 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="CSS/timeline.css">
-    <style>
-        html,body{
-            /* Your background styles here */
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bf08fd407d.js" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" type="text/css" href="CSS/timeline.css">   
+  <title>College Timeline</title>
+  <script>// Courses data
+    $(document).ready(function() {
+        var courses = {
+            "Fall 2023": ["CST-339: JAVA 3 ", "CST-250: C# 2 ", "CST-345: Database Design "],
+            "Spring 2024": ["CST-391 - JavaScript Web Application Development ", "CST-201: Algorithms and Data Structures", "CST-321: operating system fundamentals", "CST-350: C# 3"],
+            // add other semesters here
+        };
+    
+        $(".timelineEvent").on("click", function() {
+            var semester = $(this).text();
+            var semesterCourses = courses[semester];
+    
+            if (semesterCourses) {
+                var coursesList = semesterCourses.map(function(course) {
+                    return "<li>" + course + "</li>";
+                }).join("");
+    
+                $("#courseInfo").html("<h2>" + semester + "</h2><ul>" + coursesList + "</ul>");
+            } else {
+                $("#courseInfo").html("<h2>" + semester + "</h2><p>No courses listed for this semester.</p>");
+            }
+        });
+    }); </script> 
+</head>
+  <style> 
+  
+        html, body{
             background: rgb(20,22,69);
             background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+            font-family:cormorant;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: auto;
         }
-        /* Other styles... */
-    </style>
-</head>
-<body>
-    <header>
-        <h1></h1>
-        <div class="nav">
-            <button class="button"><a style="color: #21bb7d;">Special events / current events</a></button>
-            <button class="button"><a style="color: #21bb7d;">Timeline of classes until graduation</a></button>
-            <button class="button"><a style="text-decoration: none; color: #21bb7d;" href="contactMe.html">Contact me</a></button>
-            <button class="button"><a style="text-decoration: none; color: #21bb7d;" href="aboutMe.html">about me</a></button>
-            <button class="button"><a style="text-decoration: none; color: #21bb7d;">things to share</a></button>
-            <button class="button"><a style="text-decoration: none; color: #21bb7d;" href="homepage.html">Home</a></button>
-        </div>
-    </header>
+        
+        footer{
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            width: 50%;
+        }
 
-    <!-- We are creating a timeline that is interactive -->
-    <div class="timeline-container">
-        <div class="timeline">
-            <div class="timeline-event">
-                <h3>Event 1</h3>
-                <p class="event-date">July 27, 2023</p>
-                <div class="event-description">
-                    <p>Description of Event 1</p>
-                </div>
-            </div>
-            <div class="timeline-event">
-                <h3>Event 2</h3>
-                <p class="event-date">July 28, 2023</p>
-                <div class="event-description">
-                    <p>Description of Event 2</p>
-                </div>
-            </div>
-            <!-- Add more events as needed -->
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.timelineEvent {
+  background-color: #e49cda;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#courseInfo {
+  background-color: none;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(234, 214, 236, 0.1);
+  
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+#courseInfo h2 {
+  margin-top: 0;
+  color: #bfa1e2;
+}
+
+#courseInfo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#courseInfo ul li {
+  padding: 5px 0;
+}
+h2{
+        text-shadow: #000000;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #f3f3f3;
+        font-family: cormorant;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    h2:hover{
+       /*animation that causes the text to have an outline*/
+        animation: neon 1.5s ease-in-out infinite alternate;
+        color: #f3f3f3;
+        text-shadow: 0 0 1px #fff,
+        0 0 20px   rgba(252,70,107,1), 
+        0 0 30px  rgba(252,70,107,1), 
+        0 0 40px  rgba(63,94,251,1), 
+        0 0 50px  rgba(63,94,251,1), 
+        0 0 60px rgba(63,94,251,1), 
+        0 0 70px rgba(252,70,107,1);
+    
+    }
+    .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+    </style>
+
+ 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" style="position: absolute; top: 10%; right: 15%;">
+    <div class="container"> <!-- Added a container for better alignment -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Used ml-auto to push the links to the right side -->
+                <li class="nav-item"><a class="nav-link" href="specialEvents.html">Cybersecurity news articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="photoDump.html">Photo Collection</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactMe.html">Contact me</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutMe.html">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="Timeline.html">Timeline to graduation</a></li>
+            </ul>
         </div>
     </div>
+</nav>
+     
+          <a href="https://twitter.com/omnivoreowen"><i class="fa-brands fa-twitter fa-xl" style="color: #00d5ff;"></i></a>
+          <a href="https://www.youtube.com/channel/UC4H2ATljr-9yAqA39LP95dg"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
+          <a href="https://github.com/Omni-vore"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
+          <a href="https://www.instagram.com/omnivoreowen/"><i class="fa-brands fa-instagram fa-xl" style="color: #ff00ff;"></i></a>
+   
 
-    <!-- Include your JavaScript code here -->
-    <script src="JS/main.js"></script>
+<body> 
+    <h2>School Schedule </h2>
+  <div class="container" style="position: absolute; top: 25%; right: 5%;">
+      <div class="timeline">
+          <button class="timelineEvent">Fall 2023</button>
+          <button class="timelineEvent">Spring 2024</button>
+          <!-- other buttons for other semesters -->
+      </div>
+      <div id="courseInfo">
+          <!-- course info will appear here -->
+      </div>
+  </div>
+
+
+<script src="JS/timeline.js"> </script> 
 </body>
 </html>

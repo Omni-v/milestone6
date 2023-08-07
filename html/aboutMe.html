@@ -1,71 +1,55 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="CSS/homepage.css">
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
         <title>About Me</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="JS/main.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/bf08fd407d.js" crossorigin="anonymous"></script>
- 
+        <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
         
-    <style>
-        html, body{
-            background: rgb(20,22,69);
-            background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
-            font-family:cormorant;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            overflow: auto;
-        }
-        
-        footer{
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5;
-            width: 50%;
-        }
-        
-    </style>
     </head>
-    <div class ="body">
-        <header>
-            
-            <div class="nav">
-                <button class="button" ><a style="text-decoration: none; color:#21bb7d;">Special events / current events</a> </div></button>
-                <button class="button"><a style="text-decoration: #21bb7d;"> Timeline of classes until graduation </a></div></button>
-                <button class="button"><a style="text-decoration: none; color:#21bb7d;" href="homepage.html" > Home </a></div></button>
-                <button class="button"><a style="text-decoration: none; color:#21bb7d;" href="aboutMe.html" >about me </a></div></button>
-                <button class="button"> things to share</div></button>
-                <button class="button"><a style=" text-decoration: none; color: #21bb7d;" href="photoDump.html">Photo dump</a> </div></button></br>
+    <body style="background: rgb(20,22,69);
+    background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;">
+     
+        
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="right: 10%"> <!-- Added bg-dark for a dark background -->
+    <div class="container"> <!-- Added a container for better alignment -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Used ml-auto to push the links to the right side -->
+                <li class="nav-item"><a class="nav-link" href="specialEvents.html">Cybersecurity news articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="photoDump.html">Photo Collection</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactMe.html">Contact me</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutMe.html">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="Timeline.html">Timeline to graduation</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                
+              
                 <a href="https://twitter.com/omnivoreowen"><i class="fa-brands fa-twitter fa-xl" style="color: #00d5ff;"></i></a>
                 <a href="https://www.youtube.com/channel/UC4H2ATljr-9yAqA39LP95dg"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
                 <a href="https://github.com/Omni-vore"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
                 <a href="https://www.instagram.com/omnivoreowen/"><i class="fa-brands fa-instagram fa-xl" style="color: #ff00ff;"></i></a> </div>
                 
            
-        </header>
-
+    
+<body>
         <div class="main"> 
             <div class="main-text"> 
                 <h2> About me</h2>
@@ -77,14 +61,14 @@
                 </p>
             </div>
             </div>
-            <ul> 
-                 <tr style="text-align: center;"> Hobbies </tr>
+            <ul style="position: absolute; box-shadow: 0px 0px 10px 0px rgba(213, 143, 245, 0.75);   border-color:rgba(157, 89, 202, 0.75); border-style: solid;"> 
+                 <tr style="text-align: center;"> <h2>Hobbies</h2> </tr>
                  <li style="text-align: left;">Hiking</li>
                  <li style="text-align: left;">Video games</li>
                  <li style="text-align: left;">Programming</li>
                  <li style="text-align: left;">Reading</li>
             </ul>
-            <article>
+            <article style="position: absolute;">
                 <h2> Recommendations: </h2>
                 <b>       for helpful react tutorials : </b>
                    <i> <a style="color:#ffffff" href="https://www.amazon.com/React-Key-Concepts-Consolidate-knowledge/dp/1803234504/ref=sr_1_1?crid=1FWB0FDEAOAVD&keywords=React+key+concepts&qid=1690488294&sprefix=react+key+concepts%2Caps%2C157&sr=8-1"> React key concepts by Maximilian Schwarzmuller </a></i></br>
@@ -100,7 +84,7 @@
             
 
             
-            <footer> 
+            <footer style="position: absolute; bottom: 0%; left: 45%;"> 
                 <p> &copy; 2023 Owen Lindsey </p>
 
                       
@@ -109,6 +93,6 @@
                 </div>
                 
             </div>
-        </div>
+        </div> <script src="JS/main.js"></script>
     </body>
 </html>

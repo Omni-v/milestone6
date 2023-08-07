@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="CSS/homepage.css">
-<html lang="en">
+<html lang="en"></html>
+
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
     <title>Contact Me</title>
-   
-   
-   
-   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/bf08fd407d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
+   
+   
+   
     <script>
         
       
@@ -29,62 +32,47 @@
        
        
         </script>
-
-    <style>
-        html, body{
-            background: rgb(20,22,69);
-            background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
-            font-family:cormorant;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            overflow: auto;
-        }
-       
-        footer{
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 1.5;
-            width: 50%;
-        }
-    </style>
 </head>
-<div class ="body">
-<header>
+<body style="background: rgb(20,22,69);
+background: linear-gradient(180deg, rgba(20,22,69,1) 0%, rgba(203,17,213,1) 18%, rgba(12,6,55,1) 33%);
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+color: #ffffff;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;">
+   
+
+
+
     
-    <div class="nav">
-        <button class="button" ><a style="text-decoration: none; color:#21bb7d;">Special events / current events</a> </div></button>
-        <button class="button"><a style="text-decoration: #21bb7d;"> Timeline of classes until graduation </a></div></button>
-        <button class="button"><a style="text-decoration: none; color:#21bb7d;" href="homepage.html" > Home </a></div></button>
-        <button class="button"><a style="text-decoration: none; color:#21bb7d;" href="aboutMe.html" >about me </a></div></button>
-        <button class="button"> things to share </div></button>
-        <button class="button"> Photo dump</div></button><br/>
+   
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="right: 10%"> <!-- Added bg-dark for a dark background -->
+    <div class="container"> <!-- Added a container for better alignment -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Used ml-auto to push the links to the right side -->
+                <li class="nav-item"><a class="nav-link" href="specialEvents.html">Cybersecurity news articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="photoDump.html">Photo Collection</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactMe.html">Contact me</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutMe.html">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="Timeline.html">Timeline to graduation</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
         <a href="https://twitter.com/omnivoreowen"><i class="fa-brands fa-twitter fa-xl" style="color: #00d5ff;"></i></a>
         <a href="https://www.youtube.com/channel/UC4H2ATljr-9yAqA39LP95dg"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a>
         <a href="https://github.com/Omni-vore"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
         <a href="https://www.instagram.com/omnivoreowen/"><i class="fa-brands fa-instagram fa-xl" style="color: #ff00ff;"></i></a> </div>
         
    
-</header>
+
 <br class="main"> 
   
     <h2> Contact me!</h2>
@@ -93,16 +81,16 @@
     <p style="position:absolute; bottom: 35%; "> If you would like to contact me directly, please fill out the form above. </p></br>
       
 
-    <article> 
+    <article style="position: absolute; "> 
        <form name="contact" method="post">
-     name: <input type="text" name="name" placeholder="name" required><br/>
-     email: <input type="text" name="email" placeholder="email" required><br/>
-     description: <input type="text" name="description" placeholder="description" required><br/>
+     name:<input type="text" name="name" placeholder="name" required><br/>
+     email:<input type="text" name="email" placeholder="email" required><br/>
+     description:<input type="text" name="description" placeholder="description" required><br/>
         <input type="submit" value="Submit" onclick="validateForm()">
        </form>
      </article>
   
-    <footer>
+    <footer style="position: absolute; bottom: 0%; right: 40%;">
     
   
    
@@ -111,7 +99,7 @@
     
 </div>
 </div>
-<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=xk95jjzu&n=n1.ratufa.io"></script>
+<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=nhfzsbbt&n=n1.ratufa.io"></script>
 </body> 
 </html>
 
